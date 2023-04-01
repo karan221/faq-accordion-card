@@ -51,5 +51,17 @@
       </div>
     </div>
   </main>
+  <script>
+    const details = document.querySelectorAll("details");
+    details.forEach((detail) => {
+      detail.addEventListener("toggle", (e) => {
+        if (e.target.open === false) return;
+        details.forEach((detail) => {
+          console.log(detail !== e.target);
+          if (detail !== e.target) detail.open = false;
+        });
+      });
+    });
+  </script>
 </body>
 </html>
