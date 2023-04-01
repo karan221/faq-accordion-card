@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   display: flex;
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  width: 19rem;
+  width: 18rem;
   background: white;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@ main {
   justify-content: space-between;
   padding: 1rem;
   margin-top: 8rem; 
+  box-shadow: 0.5rem 0.5rem 0.5rem 1px hsl(0deg 0% 0% / 0.075);
 }
 
 .illustration {
@@ -83,4 +84,8 @@ hr {
   border-top: 1px solid hsl(240, 5%, 91%);
   margin: 1em 0;
   padding: 0;
+}
+
+p {
+  font-size: 13px;
 }
