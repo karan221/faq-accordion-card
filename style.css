@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  width: 18rem;
+  width: 20rem;
   background: white;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ img {
 
 h1 {
   text-align: center;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 details {
@@ -88,4 +88,60 @@ hr {
 
 p {
   font-size: 13px;
+}
+
+.faq div {
+  height: 22rem;
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1000px;
+    width: 60%;
+    height: 28rem;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: auto;
+    position: relative;
+  }
+  main > div {
+    width: 50%;
+    overflow: hidden;
+  }
+  .faq {
+    margin-top: 2rem;
+  }
+  .faq div {
+    max-width: 20rem;
+    padding-right: 2rem;
+    min-width: 280px;
+  }
+  h1 {
+    text-align: left;
+  }
+  .illustration {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    content: url("images/illustration-woman-online-desktop.svg");
+    background: url("images/bg-pattern-desktop.svg") no-repeat;
+    background-size: 200%;
+    background-position: right 0rem bottom -7rem;
+    width: 25rem;
+    margin: auto;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    left: -4rem;
+  }
+  .illustration::after {
+    content: url("images/illustration-box-desktop.svg");
+    position: absolute;
+    top: 40%;
+    left: -6rem;
+  }
+
 }
